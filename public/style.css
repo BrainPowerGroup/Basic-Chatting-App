@@ -77,3 +77,8 @@ button{
 #clear{
     background: #DB9898;
 }
+
+.room{
+  width: 25%;
+  border-radius: 0 0 4px 4px;
+}

@@ -19,13 +19,13 @@ send.addEventListener('click', () => {
     });
 });
 
-message.addEventListener('keypress', function(){
-
+clear.addEventListener('click', () => {
+  output.innerHTML = ''
 })
 
 socket.on('message', (data) => {
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
-}); 
+});
 
 socket.on('init', (data) => {
     sessionid.innerHTML += 'Your Session ID: ' + data.id
